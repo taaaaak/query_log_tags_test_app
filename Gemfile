@@ -9,6 +9,12 @@ gem "rails", "7.0.2.4"
 # https://techracho.bpsinc.jp/yusiro/2019_12_24/85407
 gem "bullet"
 
+# https://techblog.gmo-ap.jp/2020/06/08/rack-mini-profiler/
+gem "rack-mini-profiler", require: false
+gem "memory_profiler"
+gem "flamegraph"
+gem "stackprof"
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
