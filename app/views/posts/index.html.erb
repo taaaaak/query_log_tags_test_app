@@ -7,9 +7,13 @@
     <%#= render post %>
     <!--<p>
       <%#= link_to "Show this post", post %>
+    <tr>
+      <td><%#= post.comments.map(&:name) %></td>
+    </tr>
     </p>-->
     <tr>
-      <td><%= post.comments.map(&:name) %></td>
+      <td><%= post.comments.sum(:positive_count) %></td>
+      <td><%= post.comments.sum(:negative_count) %></td>
     </tr>
   <% end %>
 </div>
